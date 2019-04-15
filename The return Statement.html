@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>The return Statement</title>
+
+        <script>
+            function concatenate(first, last) {
+                var full;
+                full = first + last;
+                return full;
+            }
+            function secondFunction() {
+                var result;
+                result = concatenate('Tupac', 'Shakur');
+                document.write(result);
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <p>Click the following button to call the function</p>
+        <form>
+            <input type="button" onclick="secondFunction()" value="Call Function">
+        </form>
+        <p>Use different parameters inside the function and then try...</p>
+    </body>
+</html>
+
+<!--A JavaScript function can have an optional return statement. This is required if you want to return a value from a function. This statement should be the last statement in a function.
+
+For example, you can pass two numbers in a function and then you can expect the function to return their multiplication in your calling program.
+   this example defines a function that takes two parameters and concatenates them before returning the resultant in the calling program. -->
